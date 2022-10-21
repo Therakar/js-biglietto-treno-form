@@ -30,13 +30,16 @@ function getUserInfo() {
         let discountPrice = (fullPrice - (fullPrice * 0.2)).toFixed(2);
         console.log(`Prezzo scontato: `,discountPrice);
         document.getElementById(`price`).innerHTML = discountPrice;
+        document.getElementById(`offerType`).innerHTML = `Biglietto Ridotto Minorenni`;
 
     } else if (age == `pensionato`){
         let discountPrice = (fullPrice - (fullPrice * 0.4)).toFixed(2);
         console.log(`Prezzo scontato: `,discountPrice);
         document.getElementById(`price`).innerHTML = discountPrice;
+        document.getElementById(`offerType`).innerHTML = `Biglietto Ridotto Pensionati`;
     } else {
         document.getElementById(`price`).innerHTML = fullPrice;
+        document.getElementById(`offerType`).innerHTML = `Biglietto Standard`;
     }
 }
 
