@@ -1,0 +1,20 @@
+.display-none{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+

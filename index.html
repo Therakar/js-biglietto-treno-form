@@ -8,35 +8,80 @@
     <title>Biglietto treno</title>
 </head>
 <body>
-    <section>
-        <h1>Biglietto treno</h1>
+    <div class="main-container">
 
-        <form id='nameForm'>
-            <div class="from-top">
-                <input id="completeName" type="text"> 
-                <input id="kmNumber" type="text">
-                <select name="cars" id="age">
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="pensionato">Pensionato</option>
-                  </select>
-            </div>
+        <!-- sezione user info -->
+        <section id="user-info">
+            <h1>CALCOLA IL PREZZO DEL TUO BILGIETTO</h1>
             
-            <div class='form-sub'>
-                <button id='subButton' type='button'>ENTER</button>
-                <button id='reloadButton'>ANNULLA</button>
+            <form class='nameForm'>
+
+                <!-- user input part -->
+                <div class="form-top flex justify-space-between">
+                    <div class="user-input flex flex-direction-column">
+                        <label for="name">Nome Cognome</label>
+                        <input id="completeName" name="name" type="text">
+                    </div>
+                    
+                    <div class="user-input flex flex-direction-column">
+                        <label for="km">Km da percorrere</label>
+                        <input id="kmNumber" name="km" type="text">
+                    </div>
+                    
+                    <div class="user-input flex flex-direction-column">
+                        <label for="ages">Fascia d'età</label>
+                        <select name="ages" id="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="pensionato">Pensionato</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- buttons part -->
+                <div class='form-sub '>
+                    <button class="btn" id='subButton' type='button'>ENTER</button>
+                    <button class="btn" id='reloadButton'>ANNULLA</button>
+                </div>
+            </form>
+         </section>
+
+
+        <section id="output-ticket"> <!--class="display-none" --> 
+
+            <h1>IL TUO BIGLIETTO</h1>
+            <div class="second-title">
+                <h2>DETTAGLIO PASSEGGERI</h2>
+                <div class="output flex justify-space-between">
+                    <div class="passenger-name">
+                        <h3>NOME PASSEGGERO</h3>
+                        <h4 id="outputName">aaa</h4>
+                    </div>
+                    <div>
+                        <h3>Offerta</h3>
+                        <h4 id="offerType">aaa</h4>
+                    </div>
+                    
+                    <div>
+                        <h3>Carrozza</h3>
+                        <h4 id="trainWagon">aaa</h4>
+                    </div>
+                    
+                    <div>
+                        <h3>Codice CP</h3>
+                        <h4 id="cpCode">aaa</h4>
+                    </div>
+                    
+                    <div>
+                        <h3>Costo Biglietto</h3>
+                        <h4 id="price">aaa</h4>
+                    </div>
+                    
+                </div>
             </div>
-            
-        </form>
-        
-    </section>
-    <section>
-        <h2 id="price"></h2>
-        <h2 id="outputName"></h2>
-        <h2 id="offerType"></h2>
-        <h2 id="trainWagon"></h2>
-        <h2 id="cpCode"></h2>
-    </section>
+        </section>
+    </div>
+    
     
     
     <script src="js/main.js"></script>

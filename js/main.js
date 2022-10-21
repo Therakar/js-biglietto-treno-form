@@ -48,9 +48,7 @@ function getUserInfo() {
     let cpCode = Math.floor(Math.random() * 99999);
     document.getElementById(`cpCode`).innerHTML = cpCode;
 
-
-
 }
 
 let subButton = document.getElementById('subButton');
-subButton.addEventListener('click', getUserInfo, false);
+    subButton.addEventListener('click', getUserInfo, false);

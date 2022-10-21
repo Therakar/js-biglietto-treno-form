@@ -1,0 +1,92 @@
+/* RESET */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: var(--first-color);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.main-container{
+    width: 80%;
+    
+    
+}
+
+section {
+    padding: 20px;
+    padding-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.nameForm{
+    background-color: white;
+    padding: 20px 200px;
+    color: var(--first-color);
+}
+
+label{
+    padding-bottom: 20px;
+}
+
+.form-top{
+    padding-bottom: 50px;
+}
+
+#output-ticket{
+    padding: 20px 20px;
+    
+}
+
+.output{
+    background-color: white;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--first-color);
+    color: black;
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+    
+}
+
+.output div{
+    padding: 10px;
+}
+
+.output h3{
+    line-height: 0;
+    padding-bottom: 20px;
+}
+
+.output h4{
+    margin-bottom: 0;
+}
+
+.second-title{
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+h2{
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.passenger-name{
+    background-color: var(--second-color-dark);
+
+}
