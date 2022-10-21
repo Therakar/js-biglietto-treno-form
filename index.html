@@ -18,7 +18,7 @@
     <div class="main-container">
 
         <!-- sezione user info -->
-        <section class="user-info">
+        <section id="user-info">
             <h1>CALCOLA IL PREZZO DEL TUO BILGIETTO</h1>
             
             <form class='nameForm'>
@@ -47,14 +47,14 @@
                 
                 <!-- buttons part -->
                 <div class='form-sub '>
-                    <button class="btn" id='subButton' type='button'>ENTER</button>
+                    <button onclick="toggleFunction()" class="btn" id='subButton' type='button'>ENTER</button>
                     <button class="btn" id='reloadButton'>ANNULLA</button>
                 </div>
             </form>
          </section>
 
 
-        <section class="output-ticket"> <!--class="display-none" --> 
+        <section id="output-ticket" class="displayNone"> <!--class="display-none" --> 
 
             <h1>IL TUO BIGLIETTO</h1>
             <div class="second-title">
@@ -81,7 +81,7 @@
                     
                     <div>
                         <h3>Costo Biglietto</h3>
-                        <h4 id="price">aaa</h4>
+                        <h4 id="price">aaa</h4><span>€</span>
                     </div>
                     
                 </div>

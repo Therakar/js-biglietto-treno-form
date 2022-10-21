@@ -52,3 +52,9 @@ function getUserInfo() {
 
 let subButton = document.getElementById('subButton');
     subButton.addEventListener('click', getUserInfo, false);
+
+function toggleFunction() {
+    var element = document.getElementById("output-ticket");
+    element.classList.toggle("displayBlock");
+  }
+
