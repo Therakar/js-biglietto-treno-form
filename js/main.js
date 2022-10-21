@@ -41,6 +41,15 @@ function getUserInfo() {
         document.getElementById(`price`).innerHTML = fullPrice;
         document.getElementById(`offerType`).innerHTML = `Biglietto Standard`;
     }
+
+    let trainWagon = Math.floor(Math.random() * 10) + 1;
+    document.getElementById(`trainWagon`).innerHTML = trainWagon;
+
+    let cpCode = Math.floor(Math.random() * 99999);
+    document.getElementById(`cpCode`).innerHTML = cpCode;
+
+
+
 }
 
 let subButton = document.getElementById('subButton');
