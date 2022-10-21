@@ -10,17 +10,11 @@ function getUserInfo() {
     const kmNumber = Number(document.getElementById(`kmNumber`).value);
     console.log(`Numero km: ` ,kmNumber);
     
-
-
-
     // chiede l'età del passeggero
     const age = document.getElementById(`age`).value;
     // stampa l'input nella console
     console.log(`Età dell'utente: `,age);
     
-
-
-
     // assegna il valore 0.21 alla costante priceMultiplier
     const priceMultiplier = Number(0.21);
     // calcola il prezzo del biglietto moltiplicando il numero di km inseriti dall'utente per 0,21
@@ -32,21 +26,18 @@ function getUserInfo() {
     -Se l'età del passeggero è <18 viene applicato uno sconto del 20% sul prezzo del biglietto calcolato in precedenza
     -Se l'età del passeggero è >65 viene applicato uno sconto del 40% sul prezzo del biglietto calcolato in precedenza
     -Se l'età del passeggero è >= 18 e <= 65 non viene applicato nessuno sconto */
-    if (age < 18){
+    if (age == `minorenne`){
         let discountPrice = (fullPrice - (fullPrice * 0.2)).toFixed(2);
         console.log(`Prezzo scontato: `,discountPrice);
         document.getElementById(`price`).innerHTML = discountPrice;
 
-    } else if (age >= 65){
+    } else if (age == `pensionato`){
         let discountPrice = (fullPrice - (fullPrice * 0.4)).toFixed(2);
         console.log(`Prezzo scontato: `,discountPrice);
         document.getElementById(`price`).innerHTML = discountPrice;
     } else {
         document.getElementById(`price`).innerHTML = fullPrice;
     }
-
-    
-
 }
 
 let subButton = document.getElementById('subButton');
